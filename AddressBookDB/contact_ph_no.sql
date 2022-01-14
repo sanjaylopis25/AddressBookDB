@@ -1,0 +1,14 @@
+use address_book;
+create table contact_ph_no(id int not null,phone_no int,type_id int not null,foreign key(id) references contact_details(id),foreign key(type_id) references contact_ph_type(type_id));
+insert into contact_ph_no values(1,987654321,3);
+insert into contact_ph_no values(2,987654493,1);
+insert into contact_ph_no values(3,987554493,2);
+insert into contact_ph_no values(4,787876743,3);
+insert into contact_ph_no values(5,987556743,1);
+insert into contact_ph_no values(6,783556743,2);
+insert into contact_ph_no values(7,987876743,2);
+insert into contact_ph_no values(8,987876843,3);
+insert into contact_ph_no values(9,987554783,2);
+insert into contact_ph_no values(9,987554783,1);
+select * from contact_ph_no;
+drop table contact_ph_no;
